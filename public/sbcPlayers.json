@@ -1,0 +1,311 @@
+{
+  "data": {
+    "players": [
+      {
+        "price": 8100,
+        "rating": 85,
+        "nation": {
+          "image": "https://cdn.futnext.com/nation/4.png"
+        },
+        "league": {
+          "image": "https://cdn.futnext.com/league/53.png"
+        },
+        "club": {
+          "image": "https://cdn.futnext.com/club/243.png"
+        },
+        "positions": [
+          {
+            "isPreferred": true,
+            "name": "CB"
+          },
+          {
+            "isPreferred": false,
+            "name": "LB"
+          }
+        ],
+        "image": "https://cdn.futnext.com/player/197445.png",
+        "rarity": {
+          "image": "https://cdn.futnext.com/rarity/e_1.png"
+        }
+      },
+      {
+        "price": 8100,
+        "rating": 82,
+        "nation": {
+          "image": "https://cdn.futnext.com/nation/38.png"
+        },
+        "league": {
+          "image": "https://cdn.futnext.com/league/16.png"
+        },
+        "club": {
+          "image": "https://cdn.futnext.com/club/66.png"
+        },
+        "positions": [
+          {
+            "isPreferred": true,
+            "name": "GK"
+          }
+        ],
+        "image": "https://cdn.futnext.com/player/199482.png",
+        "rarity": {
+          "image": "https://cdn.futnext.com/rarity/e_1.png"
+        }
+      },
+      {
+        "price": 8100,
+        "rating": 85,
+        "nation": {
+          "image": "https://cdn.futnext.com/nation/14.png"
+        },
+        "league": {
+          "image": "https://cdn.futnext.com/league/13.png"
+        },
+        "club": {
+          "image": "https://cdn.futnext.com/club/10.png"
+        },
+        "positions": [
+          {
+            "isPreferred": true,
+            "name": "CB"
+          },
+          {
+            "isPreferred": false,
+            "name": "RB"
+          }
+        ],
+        "image": "https://cdn.futnext.com/player/203574.png",
+        "rarity": {
+          "image": "https://cdn.futnext.com/rarity/e_1.png"
+        }
+      },
+      {
+        "price": 8100,
+        "rating": 82,
+        "nation": {
+          "image": "https://cdn.futnext.com/nation/45.png"
+        },
+        "league": {
+          "image": "https://cdn.futnext.com/league/53.png"
+        },
+        "club": {
+          "image": "https://cdn.futnext.com/club/461.png"
+        },
+        "positions": [
+          {
+            "isPreferred": true,
+            "name": "LB"
+          },
+          {
+            "isPreferred": false,
+            "name": "LWB"
+          }
+        ],
+        "image": "https://cdn.futnext.com/player/211688.png",
+        "rarity": {
+          "image": "https://cdn.futnext.com/rarity/e_1.png"
+        }
+      },
+      {
+        "price": 8100,
+        "rating": 82,
+        "nation": {
+          "image": "https://cdn.futnext.com/nation/38.png"
+        },
+        "league": {
+          "image": "https://cdn.futnext.com/league/308.png"
+        },
+        "club": {
+          "image": "https://cdn.futnext.com/club/234.png"
+        },
+        "positions": [
+          {
+            "isPreferred": true,
+            "name": "RM"
+          },
+          {
+            "isPreferred": false,
+            "name": "CM"
+          },
+          {
+            "isPreferred": false,
+            "name": "LM"
+          },
+          {
+            "isPreferred": false,
+            "name": "RW"
+          }
+        ],
+        "image": "https://cdn.futnext.com/player/212814.png",
+        "rarity": {
+          "image": "https://cdn.futnext.com/rarity/e_1.png"
+        }
+      },
+      {
+        "price": 8100,
+        "rating": 84,
+        "nation": {
+          "image": "https://cdn.futnext.com/nation/43.png"
+        },
+        "league": {
+          "image": "https://cdn.futnext.com/league/31.png"
+        },
+        "club": {
+          "image": "https://cdn.futnext.com/club/116365.png"
+        },
+        "positions": [
+          {
+            "isPreferred": true,
+            "name": "CM"
+          },
+          {
+            "isPreferred": false,
+            "name": "CDM"
+          }
+        ],
+        "image": "https://cdn.futnext.com/player/216435.png",
+        "rarity": {
+          "image": "https://cdn.futnext.com/rarity/e_1.png"
+        }
+      },
+      {
+        "price": 8100,
+        "rating": 82,
+        "nation": {
+          "image": "https://cdn.futnext.com/nation/45.png"
+        },
+        "league": {
+          "image": "https://cdn.futnext.com/league/53.png"
+        },
+        "club": {
+          "image": "https://cdn.futnext.com/club/240.png"
+        },
+        "positions": [
+          {
+            "isPreferred": true,
+            "name": "LB"
+          },
+          {
+            "isPreferred": false,
+            "name": "LWB"
+          }
+        ],
+        "image": "https://cdn.futnext.com/player/231591.png",
+        "rarity": {
+          "image": "https://cdn.futnext.com/rarity/e_1.png"
+        }
+      },
+      {
+        "price": 8100,
+        "rating": 85,
+        "nation": {
+          "image": "https://cdn.futnext.com/nation/14.png"
+        },
+        "league": {
+          "image": "https://cdn.futnext.com/league/13.png"
+        },
+        "club": {
+          "image": "https://cdn.futnext.com/club/1.png"
+        },
+        "positions": [
+          {
+            "isPreferred": true,
+            "name": "CDM"
+          },
+          {
+            "isPreferred": false,
+            "name": "CM"
+          }
+        ],
+        "image": "https://cdn.futnext.com/player/234378.png",
+        "rarity": {
+          "image": "https://cdn.futnext.com/rarity/e_1.png"
+        }
+      },
+      {
+        "price": 8100,
+        "rating": 85,
+        "nation": {
+          "image": "https://cdn.futnext.com/nation/14.png"
+        },
+        "league": {
+          "image": "https://cdn.futnext.com/league/13.png"
+        },
+        "club": {
+          "image": "https://cdn.futnext.com/club/10.png"
+        },
+        "positions": [
+          {
+            "isPreferred": true,
+            "name": "LW"
+          },
+          {
+            "isPreferred": false,
+            "name": "LM"
+          },
+          {
+            "isPreferred": false,
+            "name": "RW"
+          }
+        ],
+        "image": "https://cdn.futnext.com/player/237692.png",
+        "rarity": {
+          "image": "https://cdn.futnext.com/rarity/e_1.png"
+        }
+      },
+      {
+        "price": 8100,
+        "rating": 82,
+        "nation": {
+          "image": "https://cdn.futnext.com/nation/95.png"
+        },
+        "league": {
+          "image": "https://cdn.futnext.com/league/2221.png"
+        },
+        "club": {
+          "image": "https://cdn.futnext.com/club/116300.png"
+        },
+        "positions": [
+          {
+            "isPreferred": true,
+            "name": "RB"
+          },
+          {
+            "isPreferred": false,
+            "name": "RWB"
+          }
+        ],
+        "image": "https://cdn.futnext.com/player/242024.png",
+        "rarity": {
+          "image": "https://cdn.futnext.com/rarity/e_1.png"
+        }
+      },
+      {
+        "price": 8100,
+        "rating": 82,
+        "nation": {
+          "image": "https://cdn.futnext.com/nation/54.png"
+        },
+        "league": {
+          "image": "https://cdn.futnext.com/league/13.png"
+        },
+        "club": {
+          "image": "https://cdn.futnext.com/club/2.png"
+        },
+        "positions": [
+          {
+            "isPreferred": true,
+            "name": "CDM"
+          },
+          {
+            "isPreferred": false,
+            "name": "CM"
+          }
+        ],
+        "image": "https://cdn.futnext.com/player/50568147.png",
+        "rarity": {
+          "image": "https://cdn.futnext.com/rarity/e_3.png"
+        }
+      }
+    ]
+  }
+}
