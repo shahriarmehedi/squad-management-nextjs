@@ -40,7 +40,7 @@ export default function Home() {
           </div>
 
 
-          <div className="hidden lg:block bg-[url('/bar.png')]  bg-cover w-full lg:w-[70%] h-[53px] absolute top-0 lg:left-56">
+          <div className="hidden md:block bg-[url('/bar.png')]  bg-cover w-full lg:w-[70%] h-[53px] absolute top-0 lg:left-56">
             <div className="flex justify-between px-20">
               <div className='flex items-center gap-2'>
                 <div className=''>
@@ -532,7 +532,7 @@ export default function Home() {
 
 
             {/* ---------- Player 9 ----------- */}
-            <div className='relative top-[5rem] lg:absolute  lg:top-[38rem]  lg:left-[42rem] scale-[.60] lg:scale-75'>
+            <div className='relative left-[-5px] top-[5rem] lg:absolute  lg:top-[38rem]  lg:left-[42rem] scale-[.60] lg:scale-75'>
               <div className="bg-[url('https://cdn.futnext.com/rarity/e_1.png')] bg-cover w-28 h-36 shadow-2xl z-10">
                 <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border w-[75px] relative left-[17px]'>
                   <p className='text-white font-semibold'>
@@ -577,7 +577,7 @@ export default function Home() {
 
 
             {/* ---------- Player 10 ----------- */}
-            <div className='relative top-[1rem] left-[-7px] lg:absolute  lg:top-[27rem]  lg:left-[8rem] scale-[.60] lg:scale-75'>
+            <div className='relative  top-[1rem] left-[-10px] lg:absolute  lg:top-[27rem]  lg:left-[8rem] scale-[.60] lg:scale-75'>
               <div className="bg-[url('https://cdn.futnext.com/rarity/e_1.png')] bg-cover w-28 h-36 shadow-2xl z-10">
                 <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border w-[75px] relative left-[17px]'>
                   <p className='text-white font-semibold'>
@@ -621,7 +621,7 @@ export default function Home() {
 
 
             {/* ---------- Player 11 ----------- */}
-            <div className='relative left-[-7px] lg:absolute  lg:top-[27rem]  lg:left-[28rem] scale-[.60] lg:scale-75'>
+            <div className='relative left-[-11px] lg:absolute  lg:top-[27rem]  lg:left-[28rem] scale-[.60] lg:scale-75'>
               <div className="bg-[url('https://cdn.futnext.com/rarity/e_1.png')] bg-cover w-28 h-36 shadow-2xl z-10">
                 <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border w-[75px] relative left-[17px]'>
                   <p className='text-white font-semibold'>
