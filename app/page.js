@@ -17,8 +17,8 @@ export default function Home() {
 
   return (
     <div className="bg-[url('https://i.ibb.co/mXkzmxC/field.jpg')] bg-cover lg:bg-center bg-bottom min-h-screen">
-      <div className="flex flex-col lg:flex-row lg:py-14 lg:px-16">
-        <div className="relative w-full lg:w-[80%] bg-white bg-opacity-20 rounded-md h-[100vh] lg:h-[86vh] lg:my-5 lg:p-10 lg:bg-[url('https://i.ibb.co/PTdw6sB/pitch.jpg')] bg-cover min-h-screen lg:min-h-fit">
+      <div className="flex flex-col lg:flex-row lg:p-10">
+        <div className="relative w-full lg:w-[75%] bg-white bg-opacity-20 rounded-md h-[100vh] lg:h-[90vh] lg:my-5 lg:p-10 lg:bg-[url('https://i.ibb.co/PTdw6sB/pitch.jpg')] bg-cover min-h-screen lg:min-h-fit">
 
 
           <div className="bg-[url('/left.png')] bg-cover scale-75 lg:scale-100 w-[200px] h-[80px] absolute left-[-25px] bottom-[-12px] lg:bottom-0 lg:left-0 flex items-center justify-center gap-2 cursor-pointer">
@@ -40,7 +40,7 @@ export default function Home() {
           </div>
 
 
-          <div className="hidden md:block bg-[url('/bar.png')]  bg-cover w-full lg:w-[70%] h-[53px] absolute top-0 lg:left-56">
+          <div className="hidden xl:block bg-[url('/bar.png')]  bg-cover w-full lg:w-[70%] h-[53px] absolute top-0 lg:left-56">
             <div className="flex justify-between px-20">
               <div className='flex items-center gap-2'>
                 <div className=''>
@@ -109,7 +109,7 @@ export default function Home() {
 
 
           {/* ----------------MOBILE BAR------------ */}
-          <div className="bg-[#202325] w-full h-[70px] absolute top-0 left-0 lg:hidden">
+          <div className="bg-[#202325] w-full h-[70px] absolute top-0 left-0 xl:hidden">
             <div className="flex justify-between px-5">
               <div className='flex items-center justify-between gap-3'>
                 <div className=''>
@@ -162,8 +162,8 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              {/* <div>
-                <div className=''>
+              <div>
+                <div className=' hidden lg:block'>
                   <h5 className='text-xs pt-2'>Total squad price</h5>
                   <div className="pt-1 flex items-center gap-2">
                     <p className='text-white text-sm font-semibold'>73,150</p>
@@ -172,513 +172,516 @@ export default function Home() {
                     </picture>
                   </div>
                 </div>
-              </div> */}
+              </div>
             </div>
           </div>
 
-          <div className="grid grid-cols-3 gap-1 mt-20 lg:mt-0 w-3/4 mx-auto">
-            {/* ---------- Player 1 ----------- */}
-            <div className='lg:absolute lg:top-[9rem]  lg:right-[20rem] scale-[.60] lg:scale-75'>
-              <div className="bg-[url('https://cdn.futnext.com/rarity/e_1.png')] bg-cover w-28 h-36 shadow-2xl z-10">
-                <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border w-[75px] relative left-[17px]'>
-                  <p className='text-white font-semibold'>
-                    {players[0]?.price}
-                  </p>
-                  <picture>
-                    <img src="/ut.png" alt="" className='w-4' />
-                  </picture>
+
+          <div className=' relative lg:left-20 lg:top-10 2xl:top-30 '>
+            <div className="grid grid-cols-3 gap-1 mt-20 lg:mt-0 w-3/4 mx-auto">
+              {/* ---------- Player 1 ----------- */}
+              <div className=' scale-[.60] lg:scale-75'>
+                <div className="bg-[url('https://cdn.futnext.com/rarity/e_1.png')] bg-cover w-28 h-36 shadow-2xl z-10">
+                  <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border w-[75px] relative left-[17px]'>
+                    <p className='text-white font-semibold'>
+                      {players[0]?.price}
+                    </p>
+                    <picture>
+                      <img src="/ut.png" alt="" className='w-4' />
+                    </picture>
+                  </div>
+                  <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border px-1 absolute top-9 left-[85px]'>
+                    <p className='text-white font-semibold text-sm'>
+                      {players[0]?.positions[0]?.name}
+                    </p>
+
+                  </div>
+
+                  <div className='flex justify-center'>
+                    <picture>
+                      <img src={players[0]?.image} alt="" className='w-[72px]' />
+                    </picture>
+                  </div>
+
+                  <div className="flex items-center justify-center pt-3 gap-2">
+                    <picture>
+                      <img src={players[0]?.nation?.image} alt="" className='w-5' />
+                    </picture>
+                    <picture>
+                      <img src={players[0]?.league?.image} alt="" className='w-5' />
+                    </picture>
+                    <picture>
+                      <img src={players[0]?.club?.image} alt="" className='w-5' />
+                    </picture>
+                  </div>
                 </div>
-                <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border px-1 absolute top-9 left-[85px]'>
-                  <p className='text-white font-semibold text-sm'>
+                <div className="bg-[url('/oval.png')] bg-contain bg-no-repeat w-12 h-7 relative left-7 flex items-center justify-center">
+                  <p className='text-yellow-300 text-center text-sm'>
                     {players[0]?.positions[0]?.name}
                   </p>
-
-                </div>
-
-                <div className='flex justify-center'>
-                  <picture>
-                    <img src={players[0]?.image} alt="" className='w-[72px]' />
-                  </picture>
-                </div>
-
-                <div className="flex items-center justify-center pt-3 gap-2">
-                  <picture>
-                    <img src={players[0]?.nation?.image} alt="" className='w-5' />
-                  </picture>
-                  <picture>
-                    <img src={players[0]?.league?.image} alt="" className='w-5' />
-                  </picture>
-                  <picture>
-                    <img src={players[0]?.club?.image} alt="" className='w-5' />
-                  </picture>
                 </div>
               </div>
-              <div className="bg-[url('/oval.png')] bg-contain bg-no-repeat w-12 h-7 relative left-7 flex items-center justify-center">
-                <p className='text-yellow-300 text-center text-sm'>
-                  {players[0]?.positions[0]?.name}
-                </p>
-              </div>
-            </div>
 
-            {/* ---------- Player 2 ----------- */}
-            <div className='relative top-[-2rem] lg:absolute lg:top-[9rem] lg:left-[20rem] scale-[.60] lg:scale-75'>
-              <div className="bg-[url('https://cdn.futnext.com/rarity/e_1.png')] bg-cover w-28 h-36 shadow-2xl z-10">
-                <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border w-[75px] relative left-[17px]'>
-                  <p className='text-white font-semibold'>
-                    {players[10]?.price}
-                  </p>
-                  <picture>
-                    <img src="/ut.png" alt="" className='w-4' />
-                  </picture>
+              {/* ---------- Player 2 ----------- */}
+              <div className='relative top-[-2rem]  scale-[.60] lg:scale-75'>
+                <div className="bg-[url('https://cdn.futnext.com/rarity/e_1.png')] bg-cover w-28 h-36 shadow-2xl z-10">
+                  <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border w-[75px] relative left-[17px]'>
+                    <p className='text-white font-semibold'>
+                      {players[10]?.price}
+                    </p>
+                    <picture>
+                      <img src="/ut.png" alt="" className='w-4' />
+                    </picture>
+                  </div>
+                  <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border px-1 absolute top-9 left-[85px]'>
+                    <p className='text-white font-semibold text-sm'>
+                      {players[10]?.positions[0]?.name}
+                    </p>
+
+                  </div>
+
+                  <div className='flex justify-center'>
+                    <picture>
+                      <img src={players[10]?.image} alt="" className='w-[72px]' />
+                    </picture>
+                  </div>
+
+                  <div className="flex items-center justify-center gap-2 relative bottom-4">
+                    <picture>
+                      <img src={players[10]?.nation?.image} alt="" className='w-5' />
+                    </picture>
+                    <picture>
+                      <img src={players[10]?.league?.image} alt="" className='w-5' />
+                    </picture>
+                    <picture>
+                      <img src={players[10]?.club?.image} alt="" className='w-5' />
+                    </picture>
+                  </div>
                 </div>
-                <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border px-1 absolute top-9 left-[85px]'>
-                  <p className='text-white font-semibold text-sm'>
+                <div className="bg-[url('/oval.png')] bg-contain bg-no-repeat w-12 h-7 relative left-7 flex items-center justify-center">
+                  <p className='text-yellow-300 text-center text-sm'>
                     {players[10]?.positions[0]?.name}
                   </p>
-
-                </div>
-
-                <div className='flex justify-center'>
-                  <picture>
-                    <img src={players[10]?.image} alt="" className='w-[72px]' />
-                  </picture>
-                </div>
-
-                <div className="flex items-center justify-center gap-2 relative bottom-4">
-                  <picture>
-                    <img src={players[10]?.nation?.image} alt="" className='w-5' />
-                  </picture>
-                  <picture>
-                    <img src={players[10]?.league?.image} alt="" className='w-5' />
-                  </picture>
-                  <picture>
-                    <img src={players[10]?.club?.image} alt="" className='w-5' />
-                  </picture>
                 </div>
               </div>
-              <div className="bg-[url('/oval.png')] bg-contain bg-no-repeat w-12 h-7 relative left-7 flex items-center justify-center">
-                <p className='text-yellow-300 text-center text-sm'>
-                  {players[10]?.positions[0]?.name}
-                </p>
-              </div>
-            </div>
 
-            {/* ---------- Player 3 ----------- */}
-            <div className='lg:absolute  lg:top-[6rem]  lg:left-[42rem] scale-[.60] lg:scale-75'>
-              <div className="bg-[url('https://cdn.futnext.com/rarity/e_1.png')] bg-cover w-28 h-36 shadow-2xl z-10">
-                <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border w-[75px] relative left-[17px]'>
-                  <p className='text-white font-semibold'>
-                    {players[2]?.price}
-                  </p>
-                  <picture>
-                    <img src="/ut.png" alt="" className='w-4' />
-                  </picture>
+              {/* ---------- Player 3 ----------- */}
+              <div className=' scale-[.60] lg:scale-75'>
+                <div className="bg-[url('https://cdn.futnext.com/rarity/e_1.png')] bg-cover w-28 h-36 shadow-2xl z-10">
+                  <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border w-[75px] relative left-[17px]'>
+                    <p className='text-white font-semibold'>
+                      {players[2]?.price}
+                    </p>
+                    <picture>
+                      <img src="/ut.png" alt="" className='w-4' />
+                    </picture>
+                  </div>
+                  <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border px-1 absolute top-9 left-[85px]'>
+                    <p className='text-white font-semibold text-sm'>
+                      {players[2]?.positions[0]?.name}
+                    </p>
+
+                  </div>
+
+                  <div className='flex justify-center'>
+                    <picture>
+                      <img src={players[2]?.image} alt="" className='w-[72px]' />
+                    </picture>
+                  </div>
+
+                  <div className="flex items-center justify-center pt-3 gap-2">
+                    <picture>
+                      <img src={players[2]?.nation?.image} alt="" className='w-5' />
+                    </picture>
+                    <picture>
+                      <img src={players[2]?.league?.image} alt="" className='w-5' />
+                    </picture>
+                    <picture>
+                      <img src={players[2]?.club?.image} alt="" className='w-5' />
+                    </picture>
+                  </div>
                 </div>
-                <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border px-1 absolute top-9 left-[85px]'>
-                  <p className='text-white font-semibold text-sm'>
+                <div className="bg-[url('/oval.png')] bg-contain bg-no-repeat w-12 h-7 relative left-7 flex items-center justify-center">
+                  <p className='text-yellow-300 text-center text-sm'>
                     {players[2]?.positions[0]?.name}
                   </p>
-
                 </div>
-
-                <div className='flex justify-center'>
-                  <picture>
-                    <img src={players[2]?.image} alt="" className='w-[72px]' />
-                  </picture>
-                </div>
-
-                <div className="flex items-center justify-center pt-3 gap-2">
-                  <picture>
-                    <img src={players[2]?.nation?.image} alt="" className='w-5' />
-                  </picture>
-                  <picture>
-                    <img src={players[2]?.league?.image} alt="" className='w-5' />
-                  </picture>
-                  <picture>
-                    <img src={players[2]?.club?.image} alt="" className='w-5' />
-                  </picture>
-                </div>
-              </div>
-              <div className="bg-[url('/oval.png')] bg-contain bg-no-repeat w-12 h-7 relative left-7 flex items-center justify-center">
-                <p className='text-yellow-300 text-center text-sm'>
-                  {players[2]?.positions[0]?.name}
-                </p>
               </div>
             </div>
-          </div>
 
 
-          <div className="grid grid-cols-3 gap-5 w-5/6 mx-auto">
-            {/* ---------- Player 4 ----------- */}
-            <div className='lg:absolute lg:top-[19rem]  lg:right-[18rem] scale-[.60] lg:scale-75'>
-              <div className="bg-[url('https://cdn.futnext.com/rarity/e_1.png')] bg-cover w-28 h-36 shadow-2xl z-10">
-                <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border w-[75px] relative left-[17px]'>
-                  <p className='text-white font-semibold'>
-                    {players[3]?.price}
-                  </p>
-                  <picture>
-                    <img src="/ut.png" alt="" className='w-4' />
-                  </picture>
+            <div className="grid grid-cols-3 gap-5 w-5/6 mx-auto">
+              {/* ---------- Player 4 ----------- */}
+              <div className='scale-[.60] lg:scale-75'>
+                <div className="bg-[url('https://cdn.futnext.com/rarity/e_1.png')] bg-cover w-28 h-36 shadow-2xl z-10">
+                  <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border w-[75px] relative left-[17px]'>
+                    <p className='text-white font-semibold'>
+                      {players[3]?.price}
+                    </p>
+                    <picture>
+                      <img src="/ut.png" alt="" className='w-4' />
+                    </picture>
+                  </div>
+                  <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border px-1 absolute top-9 left-[85px]'>
+                    <p className='text-white font-semibold text-sm'>
+                      {players[3]?.positions[0]?.name}
+                    </p>
+
+                  </div>
+
+                  <div className='flex justify-center'>
+                    <picture>
+                      <img src={players[3]?.image} alt="" className='w-[72px]' />
+                    </picture>
+                  </div>
+
+                  <div className="flex items-center justify-center pt-3 gap-2">
+                    <picture>
+                      <img src={players[3]?.nation?.image} alt="" className='w-5' />
+                    </picture>
+                    <picture>
+                      <img src={players[3]?.league?.image} alt="" className='w-5' />
+                    </picture>
+                    <picture>
+                      <img src={players[3]?.club?.image} alt="" className='w-5' />
+                    </picture>
+                  </div>
                 </div>
-                <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border px-1 absolute top-9 left-[85px]'>
-                  <p className='text-white font-semibold text-sm'>
+                <div className="bg-[url('/oval.png')] bg-contain bg-no-repeat w-12 h-7 relative left-7 flex items-center justify-center">
+                  <p className='text-yellow-300 text-center text-sm'>
                     {players[3]?.positions[0]?.name}
                   </p>
-
-                </div>
-
-                <div className='flex justify-center'>
-                  <picture>
-                    <img src={players[3]?.image} alt="" className='w-[72px]' />
-                  </picture>
-                </div>
-
-                <div className="flex items-center justify-center pt-3 gap-2">
-                  <picture>
-                    <img src={players[3]?.nation?.image} alt="" className='w-5' />
-                  </picture>
-                  <picture>
-                    <img src={players[3]?.league?.image} alt="" className='w-5' />
-                  </picture>
-                  <picture>
-                    <img src={players[3]?.club?.image} alt="" className='w-5' />
-                  </picture>
                 </div>
               </div>
-              <div className="bg-[url('/oval.png')] bg-contain bg-no-repeat w-12 h-7 relative left-7 flex items-center justify-center">
-                <p className='text-yellow-300 text-center text-sm'>
-                  {players[3]?.positions[0]?.name}
-                </p>
-              </div>
-            </div>
 
 
-            {/* ---------- Player 5 ----------- */}
-            <div className='relative top-[-1rem] lg:absolute  lg:top-[19rem]  lg:left-[42rem] scale-[.60] lg:scale-75'>
-              <div className="bg-[url('https://cdn.futnext.com/rarity/e_1.png')] bg-cover w-28 h-36 shadow-2xl z-10">
-                <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border w-[75px] relative left-[17px]'>
-                  <p className='text-white font-semibold'>
-                    {players[4]?.price}
-                  </p>
-                  <picture>
-                    <img src="/ut.png" alt="" className='w-4' />
-                  </picture>
+              {/* ---------- Player 5 ----------- */}
+              <div className='relative top-[-1rem] scale-[.60] lg:scale-75'>
+                <div className="bg-[url('https://cdn.futnext.com/rarity/e_1.png')] bg-cover w-28 h-36 shadow-2xl z-10">
+                  <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border w-[75px] relative left-[17px]'>
+                    <p className='text-white font-semibold'>
+                      {players[4]?.price}
+                    </p>
+                    <picture>
+                      <img src="/ut.png" alt="" className='w-4' />
+                    </picture>
+                  </div>
+                  <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border px-1 absolute top-9 left-[85px]'>
+                    <p className='text-white font-semibold text-sm'>
+                      {players[4]?.positions[0]?.name}
+                    </p>
+
+                  </div>
+
+                  <div className='flex justify-center'>
+                    <picture>
+                      <img src={players[4]?.image} alt="" className='w-[72px]' />
+                    </picture>
+                  </div>
+
+                  <div className="flex items-center justify-center pt-3 gap-2">
+                    <picture>
+                      <img src={players[4]?.nation?.image} alt="" className='w-5' />
+                    </picture>
+                    <picture>
+                      <img src={players[4]?.league?.image} alt="" className='w-5' />
+                    </picture>
+                    <picture>
+                      <img src={players[4]?.club?.image} alt="" className='w-5' />
+                    </picture>
+                  </div>
                 </div>
-                <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border px-1 absolute top-9 left-[85px]'>
-                  <p className='text-white font-semibold text-sm'>
+                <div className="bg-[url('/oval.png')] bg-contain bg-no-repeat w-12 h-7 relative left-7 flex items-center justify-center">
+                  <p className='text-yellow-300 text-center text-sm'>
                     {players[4]?.positions[0]?.name}
                   </p>
-
-                </div>
-
-                <div className='flex justify-center'>
-                  <picture>
-                    <img src={players[4]?.image} alt="" className='w-[72px]' />
-                  </picture>
-                </div>
-
-                <div className="flex items-center justify-center pt-3 gap-2">
-                  <picture>
-                    <img src={players[4]?.nation?.image} alt="" className='w-5' />
-                  </picture>
-                  <picture>
-                    <img src={players[4]?.league?.image} alt="" className='w-5' />
-                  </picture>
-                  <picture>
-                    <img src={players[4]?.club?.image} alt="" className='w-5' />
-                  </picture>
                 </div>
               </div>
-              <div className="bg-[url('/oval.png')] bg-contain bg-no-repeat w-12 h-7 relative left-7 flex items-center justify-center">
-                <p className='text-yellow-300 text-center text-sm'>
-                  {players[4]?.positions[0]?.name}
-                </p>
-              </div>
-            </div>
 
 
-            {/* ---------- Player 6 ----------- */}
-            <div className='lg:absolute  lg:top-[19rem]  lg:left-[18rem] scale-[.60] lg:scale-75'>
-              <div className="bg-[url('https://cdn.futnext.com/rarity/e_1.png')] bg-cover w-28 h-36 shadow-2xl z-10">
-                <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border w-[75px] relative left-[17px]'>
-                  <p className='text-white font-semibold'>
-                    {players[5]?.price}
-                  </p>
-                  <picture>
-                    <img src="/ut.png" alt="" className='w-4' />
-                  </picture>
+              {/* ---------- Player 6 ----------- */}
+              <div className='scale-[.60] lg:scale-75'>
+                <div className="bg-[url('https://cdn.futnext.com/rarity/e_1.png')] bg-cover w-28 h-36 shadow-2xl z-10">
+                  <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border w-[75px] relative left-[17px]'>
+                    <p className='text-white font-semibold'>
+                      {players[5]?.price}
+                    </p>
+                    <picture>
+                      <img src="/ut.png" alt="" className='w-4' />
+                    </picture>
+                  </div>
+                  <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border px-1 absolute top-9 left-[85px]'>
+                    <p className='text-white font-semibold text-sm'>
+                      {players[5]?.positions[0]?.name}
+                    </p>
+
+                  </div>
+
+                  <div className='flex justify-center'>
+                    <picture>
+                      <img src={players[5]?.image} alt="" className='w-[72px]' />
+                    </picture>
+                  </div>
+
+                  <div className="flex items-center justify-center pt-3 gap-2">
+                    <picture>
+                      <img src={players[5]?.nation?.image} alt="" className='w-5' />
+                    </picture>
+                    <picture>
+                      <img src={players[5]?.league?.image} alt="" className='w-5' />
+                    </picture>
+                    <picture>
+                      <img src={players[5]?.club?.image} alt="" className='w-5' />
+                    </picture>
+                  </div>
                 </div>
-                <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border px-1 absolute top-9 left-[85px]'>
-                  <p className='text-white font-semibold text-sm'>
+                <div className="bg-[url('/oval.png')] bg-contain bg-no-repeat w-12 h-7 relative left-7 flex items-center justify-center">
+                  <p className='text-yellow-300 text-center text-sm'>
                     {players[5]?.positions[0]?.name}
                   </p>
-
                 </div>
-
-                <div className='flex justify-center'>
-                  <picture>
-                    <img src={players[5]?.image} alt="" className='w-[72px]' />
-                  </picture>
-                </div>
-
-                <div className="flex items-center justify-center pt-3 gap-2">
-                  <picture>
-                    <img src={players[5]?.nation?.image} alt="" className='w-5' />
-                  </picture>
-                  <picture>
-                    <img src={players[5]?.league?.image} alt="" className='w-5' />
-                  </picture>
-                  <picture>
-                    <img src={players[5]?.club?.image} alt="" className='w-5' />
-                  </picture>
-                </div>
-              </div>
-              <div className="bg-[url('/oval.png')] bg-contain bg-no-repeat w-12 h-7 relative left-7 flex items-center justify-center">
-                <p className='text-yellow-300 text-center text-sm'>
-                  {players[5]?.positions[0]?.name}
-                </p>
               </div>
             </div>
-          </div>
 
 
-          <div className="grid grid-cols-5">
-            {/* ---------- Player 7 ----------- */}
-            <div className='lg:absolute  lg:top-[27rem]  lg:right-[8rem] scale-[.60] lg:scale-75'>
-              <div className="bg-[url('https://cdn.futnext.com/rarity/e_1.png')] bg-cover w-28 h-36 shadow-2xl z-10">
-                <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border w-[75px] relative left-[17px]'>
-                  <p className='text-white font-semibold'>
-                    {players[6]?.price}
-                  </p>
-                  <picture>
-                    <img src="/ut.png" alt="" className='w-4' />
-                  </picture>
+            <div className="grid grid-cols-5">
+              {/* ---------- Player 7 ----------- */}
+              <div className=' scale-[.60] lg:scale-75'>
+                <div className="bg-[url('https://cdn.futnext.com/rarity/e_1.png')] bg-cover w-28 h-36 shadow-2xl z-10">
+                  <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border w-[75px] relative left-[17px]'>
+                    <p className='text-white font-semibold'>
+                      {players[6]?.price}
+                    </p>
+                    <picture>
+                      <img src="/ut.png" alt="" className='w-4' />
+                    </picture>
+                  </div>
+                  <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border px-1 absolute top-9 left-[85px]'>
+                    <p className='text-white font-semibold text-sm'>
+                      {players[6]?.positions[0]?.name}
+                    </p>
+
+                  </div>
+
+                  <div className='flex justify-center'>
+                    <picture>
+                      <img src={players[6]?.image} alt="" className='w-[72px]' />
+                    </picture>
+                  </div>
+
+                  <div className="flex items-center justify-center pt-3 gap-2">
+                    <picture>
+                      <img src={players[6]?.nation?.image} alt="" className='w-5' />
+                    </picture>
+                    <picture>
+                      <img src={players[6]?.league?.image} alt="" className='w-5' />
+                    </picture>
+                    <picture>
+                      <img src={players[6]?.club?.image} alt="" className='w-5' />
+                    </picture>
+                  </div>
                 </div>
-                <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border px-1 absolute top-9 left-[85px]'>
-                  <p className='text-white font-semibold text-sm'>
+                <div className="bg-[url('/oval.png')] bg-contain bg-no-repeat w-12 h-7 relative left-7 flex items-center justify-center">
+                  <p className='text-yellow-300 text-center text-sm'>
                     {players[6]?.positions[0]?.name}
                   </p>
-
-                </div>
-
-                <div className='flex justify-center'>
-                  <picture>
-                    <img src={players[6]?.image} alt="" className='w-[72px]' />
-                  </picture>
-                </div>
-
-                <div className="flex items-center justify-center pt-3 gap-2">
-                  <picture>
-                    <img src={players[6]?.nation?.image} alt="" className='w-5' />
-                  </picture>
-                  <picture>
-                    <img src={players[6]?.league?.image} alt="" className='w-5' />
-                  </picture>
-                  <picture>
-                    <img src={players[6]?.club?.image} alt="" className='w-5' />
-                  </picture>
                 </div>
               </div>
-              <div className="bg-[url('/oval.png')] bg-contain bg-no-repeat w-12 h-7 relative left-7 flex items-center justify-center">
-                <p className='text-yellow-300 text-center text-sm'>
-                  {players[6]?.positions[0]?.name}
-                </p>
-              </div>
-            </div>
 
 
-            {/* ---------- Player 8 ----------- */}
-            <div className='relative top-[1rem] lg:absolute  lg:top-[27rem]  lg:right-[28rem] scale-[.60] lg:scale-75'>
-              <div className="bg-[url('https://cdn.futnext.com/rarity/e_1.png')] bg-cover w-28 h-36 shadow-2xl z-10">
-                <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border w-[75px] relative left-[17px]'>
-                  <p className='text-white font-semibold'>
-                    {players[7]?.price}
-                  </p>
-                  <picture>
-                    <img src="/ut.png" alt="" className='w-4' />
-                  </picture>
+              {/* ---------- Player 8 ----------- */}
+              <div className='relative top-[1rem] scale-[.60] lg:scale-75'>
+                <div className="bg-[url('https://cdn.futnext.com/rarity/e_1.png')] bg-cover w-28 h-36 shadow-2xl z-10">
+                  <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border w-[75px] relative left-[17px]'>
+                    <p className='text-white font-semibold'>
+                      {players[7]?.price}
+                    </p>
+                    <picture>
+                      <img src="/ut.png" alt="" className='w-4' />
+                    </picture>
+                  </div>
+                  <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border px-1 absolute top-9 left-[85px]'>
+                    <p className='text-white font-semibold text-sm'>
+                      {players[7]?.positions[0]?.name}
+                    </p>
+
+                  </div>
+
+                  <div className='flex justify-center'>
+                    <picture>
+                      <img src={players[7]?.image} alt="" className='w-[72px]' />
+                    </picture>
+                  </div>
+
+                  <div className="flex items-center justify-center pt-3 gap-2">
+                    <picture>
+                      <img src={players[7]?.nation?.image} alt="" className='w-5' />
+                    </picture>
+                    <picture>
+                      <img src={players[7]?.league?.image} alt="" className='w-5' />
+                    </picture>
+                    <picture>
+                      <img src={players[7]?.club?.image} alt="" className='w-5' />
+                    </picture>
+                  </div>
                 </div>
-                <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border px-1 absolute top-9 left-[85px]'>
-                  <p className='text-white font-semibold text-sm'>
+                <div className="bg-[url('/oval.png')] bg-contain bg-no-repeat w-12 h-7 relative left-7 flex items-center justify-center">
+                  <p className='text-yellow-300 text-center text-sm'>
                     {players[7]?.positions[0]?.name}
                   </p>
-
-                </div>
-
-                <div className='flex justify-center'>
-                  <picture>
-                    <img src={players[7]?.image} alt="" className='w-[72px]' />
-                  </picture>
-                </div>
-
-                <div className="flex items-center justify-center pt-3 gap-2">
-                  <picture>
-                    <img src={players[7]?.nation?.image} alt="" className='w-5' />
-                  </picture>
-                  <picture>
-                    <img src={players[7]?.league?.image} alt="" className='w-5' />
-                  </picture>
-                  <picture>
-                    <img src={players[7]?.club?.image} alt="" className='w-5' />
-                  </picture>
                 </div>
               </div>
-              <div className="bg-[url('/oval.png')] bg-contain bg-no-repeat w-12 h-7 relative left-7 flex items-center justify-center">
-                <p className='text-yellow-300 text-center text-sm'>
-                  {players[7]?.positions[0]?.name}
-                </p>
-              </div>
-            </div>
 
 
-            {/* ---------- Player 9 ----------- */}
-            <div className='relative left-[-5px] top-[5rem] lg:absolute  lg:top-[38rem]  lg:left-[42rem] scale-[.60] lg:scale-75'>
-              <div className="bg-[url('https://cdn.futnext.com/rarity/e_1.png')] bg-cover w-28 h-36 shadow-2xl z-10">
-                <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border w-[75px] relative left-[17px]'>
-                  <p className='text-white font-semibold'>
-                    {players[1]?.price}
-                  </p>
-                  <picture>
-                    <img src="/ut.png" alt="" className='w-4' />
-                  </picture>
+              {/* ---------- Player 9 ----------- */}
+              <div className='relative left-[-5px] top-[5rem] scale-[.60] lg:scale-75'>
+                <div className="bg-[url('https://cdn.futnext.com/rarity/e_1.png')] bg-cover w-28 h-36 shadow-2xl z-10">
+                  <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border w-[75px] relative left-[17px]'>
+                    <p className='text-white font-semibold'>
+                      {players[1]?.price}
+                    </p>
+                    <picture>
+                      <img src="/ut.png" alt="" className='w-4' />
+                    </picture>
+                  </div>
+                  <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border px-1 absolute top-9 left-[85px]'>
+                    <p className='text-white font-semibold text-sm'>
+                      {players[1]?.positions[0]?.name}
+                    </p>
+
+                  </div>
+
+                  <div className='flex justify-center'>
+                    <picture>
+                      <img src={players[1]?.image} alt="" className='w-[72px]' />
+                    </picture>
+                  </div>
+
+                  <div className="flex items-center justify-center pt-3 gap-2">
+                    <picture>
+                      <img src={players[1]?.nation?.image} alt="" className='w-5' />
+                    </picture>
+                    <picture>
+                      <img src={players[1]?.league?.image} alt="" className='w-5' />
+                    </picture>
+                    <picture>
+                      <img src={players[1]?.club?.image} alt="" className='w-5' />
+                    </picture>
+                  </div>
                 </div>
-                <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border px-1 absolute top-9 left-[85px]'>
-                  <p className='text-white font-semibold text-sm'>
+                <div className="bg-[url('/oval.png')] bg-contain bg-no-repeat w-12 h-7 relative left-7 flex items-center justify-center">
+                  <p className='text-yellow-300 text-center text-sm'>
                     {players[1]?.positions[0]?.name}
                   </p>
-
-                </div>
-
-                <div className='flex justify-center'>
-                  <picture>
-                    <img src={players[1]?.image} alt="" className='w-[72px]' />
-                  </picture>
-                </div>
-
-                <div className="flex items-center justify-center pt-3 gap-2">
-                  <picture>
-                    <img src={players[1]?.nation?.image} alt="" className='w-5' />
-                  </picture>
-                  <picture>
-                    <img src={players[1]?.league?.image} alt="" className='w-5' />
-                  </picture>
-                  <picture>
-                    <img src={players[1]?.club?.image} alt="" className='w-5' />
-                  </picture>
                 </div>
               </div>
-              <div className="bg-[url('/oval.png')] bg-contain bg-no-repeat w-12 h-7 relative left-7 flex items-center justify-center">
-                <p className='text-yellow-300 text-center text-sm'>
-                  {players[1]?.positions[0]?.name}
-                </p>
-              </div>
-            </div>
 
 
 
-            {/* ---------- Player 10 ----------- */}
-            <div className='relative  top-[1rem] left-[-10px] lg:absolute  lg:top-[27rem]  lg:left-[8rem] scale-[.60] lg:scale-75'>
-              <div className="bg-[url('https://cdn.futnext.com/rarity/e_1.png')] bg-cover w-28 h-36 shadow-2xl z-10">
-                <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border w-[75px] relative left-[17px]'>
-                  <p className='text-white font-semibold'>
-                    {players[9]?.price}
-                  </p>
-                  <picture>
-                    <img src="/ut.png" alt="" className='w-4' />
-                  </picture>
+              {/* ---------- Player 10 ----------- */}
+              <div className='relative  top-[1rem] left-[-10px] scale-[.60] lg:scale-75'>
+                <div className="bg-[url('https://cdn.futnext.com/rarity/e_1.png')] bg-cover w-28 h-36 shadow-2xl z-10">
+                  <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border w-[75px] relative left-[17px]'>
+                    <p className='text-white font-semibold'>
+                      {players[9]?.price}
+                    </p>
+                    <picture>
+                      <img src="/ut.png" alt="" className='w-4' />
+                    </picture>
+                  </div>
+                  <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border px-1 absolute top-9 left-[85px]'>
+                    <p className='text-white font-semibold text-sm'>
+                      {players[9]?.positions[0]?.name}
+                    </p>
+
+                  </div>
+
+                  <div className='flex justify-center'>
+                    <picture>
+                      <img src={players[9]?.image} alt="" className='w-[72px]' />
+                    </picture>
+                  </div>
+
+                  <div className="flex items-center justify-center pt-3 gap-2">
+                    <picture>
+                      <img src={players[9]?.nation?.image} alt="" className='w-5' />
+                    </picture>
+                    <picture>
+                      <img src={players[9]?.league?.image} alt="" className='w-5' />
+                    </picture>
+                    <picture>
+                      <img src={players[9]?.club?.image} alt="" className='w-5' />
+                    </picture>
+                  </div>
                 </div>
-                <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border px-1 absolute top-9 left-[85px]'>
-                  <p className='text-white font-semibold text-sm'>
+                <div className="bg-[url('/oval.png')] bg-contain bg-no-repeat w-12 h-7 relative left-7 flex items-center justify-center">
+                  <p className='text-yellow-300 text-center text-sm'>
                     {players[9]?.positions[0]?.name}
                   </p>
-
-                </div>
-
-                <div className='flex justify-center'>
-                  <picture>
-                    <img src={players[9]?.image} alt="" className='w-[72px]' />
-                  </picture>
-                </div>
-
-                <div className="flex items-center justify-center pt-3 gap-2">
-                  <picture>
-                    <img src={players[9]?.nation?.image} alt="" className='w-5' />
-                  </picture>
-                  <picture>
-                    <img src={players[9]?.league?.image} alt="" className='w-5' />
-                  </picture>
-                  <picture>
-                    <img src={players[9]?.club?.image} alt="" className='w-5' />
-                  </picture>
                 </div>
               </div>
-              <div className="bg-[url('/oval.png')] bg-contain bg-no-repeat w-12 h-7 relative left-7 flex items-center justify-center">
-                <p className='text-yellow-300 text-center text-sm'>
-                  {players[9]?.positions[0]?.name}
-                </p>
-              </div>
-            </div>
 
 
-            {/* ---------- Player 11 ----------- */}
-            <div className='relative left-[-11px] lg:absolute  lg:top-[27rem]  lg:left-[28rem] scale-[.60] lg:scale-75'>
-              <div className="bg-[url('https://cdn.futnext.com/rarity/e_1.png')] bg-cover w-28 h-36 shadow-2xl z-10">
-                <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border w-[75px] relative left-[17px]'>
-                  <p className='text-white font-semibold'>
-                    {players[8]?.price}
-                  </p>
-                  <picture>
-                    <img src="/ut.png" alt="" className='w-4' />
-                  </picture>
+              {/* ---------- Player 11 ----------- */}
+              <div className='relative left-[-11px] scale-[.60] lg:scale-75'>
+                <div className="bg-[url('https://cdn.futnext.com/rarity/e_1.png')] bg-cover w-28 h-36 shadow-2xl z-10">
+                  <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border w-[75px] relative left-[17px]'>
+                    <p className='text-white font-semibold'>
+                      {players[8]?.price}
+                    </p>
+                    <picture>
+                      <img src="/ut.png" alt="" className='w-4' />
+                    </picture>
+                  </div>
+                  <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border px-1 absolute top-9 left-[85px]'>
+                    <p className='text-white font-semibold text-sm'>
+                      {players[8]?.positions[0]?.name}
+                    </p>
+
+                  </div>
+
+                  <div className='flex justify-center'>
+                    <picture>
+                      <img src={players[8]?.image} alt="" className='w-[72px]' />
+                    </picture>
+                  </div>
+
+                  <div className="flex items-center justify-center pt-3 gap-2">
+                    <picture>
+                      <img src={players[8]?.nation?.image} alt="" className='w-5' />
+                    </picture>
+                    <picture>
+                      <img src={players[8]?.league?.image} alt="" className='w-5' />
+                    </picture>
+                    <picture>
+                      <img src={players[8]?.club?.image} alt="" className='w-5' />
+                    </picture>
+                  </div>
                 </div>
-                <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border px-1 absolute top-9 left-[85px]'>
-                  <p className='text-white font-semibold text-sm'>
+                <div className="bg-[url('/oval.png')] bg-contain bg-no-repeat w-12 h-7 relative left-7 flex items-center justify-center">
+                  <p className='text-yellow-300 text-center text-sm'>
                     {players[8]?.positions[0]?.name}
                   </p>
-
-                </div>
-
-                <div className='flex justify-center'>
-                  <picture>
-                    <img src={players[8]?.image} alt="" className='w-[72px]' />
-                  </picture>
-                </div>
-
-                <div className="flex items-center justify-center pt-3 gap-2">
-                  <picture>
-                    <img src={players[8]?.nation?.image} alt="" className='w-5' />
-                  </picture>
-                  <picture>
-                    <img src={players[8]?.league?.image} alt="" className='w-5' />
-                  </picture>
-                  <picture>
-                    <img src={players[8]?.club?.image} alt="" className='w-5' />
-                  </picture>
                 </div>
               </div>
-              <div className="bg-[url('/oval.png')] bg-contain bg-no-repeat w-12 h-7 relative left-7 flex items-center justify-center">
-                <p className='text-yellow-300 text-center text-sm'>
-                  {players[8]?.positions[0]?.name}
-                </p>
-              </div>
+
             </div>
-
           </div>
-
 
 
 
         </div>
 
         {/* ----------------- Right Side ----------------- */}
-        <div className='w-full lg:w-[20%] bg-[#202325] border-l-[1px] border-zinc-500 lg:h-[86vh] my-5 text-white'>
+        <div className='w-full flex flex-col justify-between lg:w-[25%]  bg-[#202325] border-l-[1px] border-zinc-500 lg:h-[90vh] my-5 text-white'>
+
           <div className='bg-[#16191A] w-full h-[85px]'>
             <p className='p-4'>
               Earn a pack containing a Road to thw Knockouts Player rated 84 OVR or higher.
             </p>
           </div>
 
-          <div className='p-4'>
+          <div className='p-4 overflow-y-scroll'>
             <h2 className='text-lg font-semibold'>Challenge Requirements</h2>
             <div className='flex items-center justify-between gap-2 mt-2'>
               <div className='flex items-center gap-2'>
@@ -736,7 +739,7 @@ export default function Home() {
           </div>
 
 
-          <div className='bg-[#313131] h-[50px] w-full border-t-[1px] border-[#5b5b5b] p-3'>
+          <div className='bg-[#313131] h-[50px] border-t-[1px] border-[#5b5b5b] p-3 text-sm xl:text-base '>
             <div className="flex items-centeer gap-5">
               <div className="flex items-center gap-2">
                 <picture>
