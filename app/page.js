@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <div className="bg-[url('https://i.ibb.co/mXkzmxC/field.jpg')] bg-cover lg:bg-center bg-bottom min-h-screen">
       <div className="flex flex-col lg:flex-row lg:p-10">
-        <div className="relative w-full lg:w-[75%] bg-white bg-opacity-20 rounded-md h-[100vh] lg:h-[90vh] lg:my-5 lg:p-10 lg:bg-[url('https://i.ibb.co/PTdw6sB/pitch.jpg')] bg-cover min-h-screen lg:min-h-fit">
+        <div className="relative w-full lg:w-[75%] bg-white bg-opacity-20 rounded-md h-[100vh] lg:h-[90vh] lg:my-5 lg:p-10 bg-[url('/bg2.png')]  lg:bg-[url('https://i.ibb.co/PTdw6sB/pitch.jpg')] bg-cover min-h-screen lg:min-h-fit">
 
 
           <div className="bg-[url('/left.png')] bg-cover scale-75 lg:scale-100 w-[200px] h-[80px] absolute left-[-25px] bottom-[-12px] lg:bottom-0 lg:left-0 flex items-center justify-center gap-2 cursor-pointer">
