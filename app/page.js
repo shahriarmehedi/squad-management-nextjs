@@ -40,7 +40,7 @@ export default function Home() {
           </div>
 
 
-          <div className="hidden xl:block bg-[url('/bar.png')]  bg-cover w-full lg:w-[70%] h-[53px] absolute top-0 lg:left-56">
+          <div className="hidden 2xl:block bg-[url('/bar.png')]  bg-cover w-full lg:w-[70%] h-[53px] absolute top-0 lg:left-56">
             <div className="flex justify-between px-20">
               <div className='flex items-center gap-2'>
                 <div className=''>
@@ -109,7 +109,7 @@ export default function Home() {
 
 
           {/* ----------------MOBILE BAR------------ */}
-          <div className="bg-[#202325] w-full h-[70px] absolute top-0 left-0 xl:hidden">
+          <div className="bg-[#202325] w-full h-[70px] absolute top-0 left-0 2xl:hidden">
             <div className="flex justify-between px-5">
               <div className='flex items-center justify-between gap-3'>
                 <div className=''>
@@ -177,7 +177,7 @@ export default function Home() {
           </div>
 
 
-          <div className=' relative lg:left-20 lg:top-10 2xl:top-30 '>
+          <div className=' relative lg:left-20 5xl:left-52 lg:top-10 2xl:top-30 5xl:top-60 '>
             <div className="grid grid-cols-3 gap-1 mt-20 lg:mt-0 w-3/4 mx-auto">
               {/* ---------- Player 1 ----------- */}
               <div className=' scale-[.60] lg:scale-75'>
@@ -673,15 +673,15 @@ export default function Home() {
         </div>
 
         {/* ----------------- Right Side ----------------- */}
-        <div className='w-full flex flex-col justify-between lg:w-[25%]  bg-[#202325] border-l-[1px] border-zinc-500 lg:h-[90vh] my-5 text-white'>
+        <div className='relative w-full flex flex-col justify-between lg:w-[25%]  bg-[#202325] border-l-[1px] border-zinc-500 lg:h-[90vh] my-5 text-white'>
 
           <div className='bg-[#16191A] w-full h-[85px]'>
-            <p className='p-4'>
+            <p className='px-4 py-3 text-sm xl:text-base'>
               Earn a pack containing a Road to thw Knockouts Player rated 84 OVR or higher.
             </p>
           </div>
 
-          <div className='p-4 overflow-y-scroll'>
+          <div className='p-4 overflow-y-scroll 5xl:absolute w-full 5xl:top-36'>
             <h2 className='text-lg font-semibold'>Challenge Requirements</h2>
             <div className='flex items-center justify-between gap-2 mt-2'>
               <div className='flex items-center gap-2'>
@@ -739,7 +739,7 @@ export default function Home() {
           </div>
 
 
-          <div className='bg-[#313131] h-[50px] border-t-[1px] border-[#5b5b5b] p-3 text-sm xl:text-base '>
+          <div className='bg-[#313131] h-[50px] border-t-[1px] border-[#5b5b5b] flex justify-center items-center py-2'>
             <div className="flex items-centeer gap-5">
               <div className="flex items-center gap-2">
                 <picture>
