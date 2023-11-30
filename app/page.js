@@ -17,8 +17,8 @@ export default function Home() {
 
   return (
     <div className="bg-[url('https://i.ibb.co/mXkzmxC/field.jpg')] bg-cover lg:bg-center bg-bottom min-h-screen">
-      <div className="flex flex-col lg:flex-row lg:p-10">
-        <div className="relative w-full lg:w-[75%] bg-white bg-opacity-20 rounded-md h-[100vh] lg:h-[90vh] lg:my-5 lg:p-10 bg-[url('https://www.ea.com/ea-sports-fc/ultimate-team/web-app/images/backgrounds/pitch_320x382.jpg')] max-md:bg-center  lg:bg-[url('https://i.ibb.co/PTdw6sB/pitch.jpg')] bg-cover min-h-screen lg:min-h-fit">
+      <div className="flex flex-col lg:flex-row lg:p-10 justify-center">
+        <div className="relative mx-auto lg:mx-0 max-w-[600px] bg-white bg-opacity-20 rounded-md lg:my-5 lg:p-10 bg-[url('https://www.ea.com/ea-sports-fc/ultimate-team/web-app/images/backgrounds/pitch_320x382.jpg')] bg-center  lg:bg-[url('https://i.ibb.co/PTdw6sB/pitch.jpg')] bg-cover min-h-screen lg:min-h-fit">
 
 
           <div className="bg-[url('/left.png')] bg-cover scale-75 lg:scale-100 w-[200px] h-[80px] absolute left-[-25px] bottom-[-12px] lg:bottom-0 lg:left-0 flex items-center justify-center gap-2 cursor-pointer">
@@ -40,7 +40,7 @@ export default function Home() {
           </div>
 
 
-          <div className="hidden 2xl:block bg-[url('/bar.png')]  bg-cover w-full lg:w-[70%] h-[53px] absolute top-0 lg:left-56">
+          <div className="hidden bg-[url('/bar.png')]  bg-cover w-full h-[53px] absolute top-0 lg:left-56">
             <div className="flex justify-between px-20">
               <div className='flex items-center gap-2'>
                 <div className=''>
@@ -109,7 +109,7 @@ export default function Home() {
 
 
           {/* ----------------MOBILE BAR------------ */}
-          <div className="bg-[#202325] w-full h-[70px] absolute top-0 left-0 2xl:hidden">
+          <div className="bg-[#202325] w-full h-[70px] absolute top-0 left-0">
             <div className="flex justify-between px-5">
               <div className='flex items-center justify-between gap-3'>
                 <div className=''>
@@ -177,7 +177,7 @@ export default function Home() {
           </div>
 
 
-          <div className=' relative top-5 lg:left-20 5xl:left-52 lg:top-16 xl:right-36 2xl:top-30 5xl:top-60 '>
+          <div className='pb-20 lg:pb-14 pt-5 lg:pt-20'>
             <div className="grid grid-cols-3 gap-1 mt-20 lg:mt-0 w-3/4 mx-auto">
               {/* ---------- Player 1 ----------- */}
               <div className=' scale-[.60] lg:scale-75'>
@@ -534,7 +534,7 @@ export default function Home() {
 
 
               {/* ---------- Player 9 ----------- */}
-              <div className='relative left-[-5px] top-[5rem] scale-[.60] lg:scale-75'>
+              <div className='relative left-[-12px] top-[5rem] scale-[.60] lg:scale-75'>
                 <div className="bg-[url('https://cdn.futnext.com/rarity/e_1.png')] bg-cover w-28 h-36 shadow-2xl z-10">
                   <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border w-[75px] relative left-[17px]'>
                     <p className='text-white font-semibold'>
@@ -673,7 +673,7 @@ export default function Home() {
         </div>
 
         {/* ----------------- Right Side ----------------- */}
-        <div className='relative w-full flex flex-col justify-between lg:w-[25%]  bg-[#202325] border-l-[1px] border-zinc-500 lg:h-[90vh] my-5 text-white'>
+        <div className='  bg-[#202325] border-l-[1px] mx-auto lg:mx-0 border-zinc-500 my-5 text-white max-w-[600px] lg:max-w-[350px]'>
 
           <div className='bg-[#16191A] w-full h-[85px]'>
             <p className='px-4 py-3 text-sm xl:text-base'>
@@ -681,7 +681,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className='p-4 overflow-y-scroll 5xl:absolute w-full 5xl:top-36'>
+          <div className='p-4 overflow-y-scroll w-full'>
             <h2 className='text-lg font-semibold'>Challenge Requirements</h2>
             <div className='flex items-center justify-between gap-2 mt-2'>
               <div className='flex items-center gap-2'>
