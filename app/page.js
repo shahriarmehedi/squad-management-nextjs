@@ -307,7 +307,7 @@ export default function Home() {
             </div>
 
 
-            <div className="grid grid-cols-3 gap-5 w-5/6 mx-auto relative top-10">
+            <div className="grid grid-cols-3 gap-5 w-5/6 mx-auto relative lg:top-10">
               {/* ---------- Player 4 ----------- */}
               <div className='scale-[.60] lg:scale-75'>
                 <div className="bg-[url('https://cdn.futnext.com/rarity/e_1.png')] bg-cover w-28 h-36 shadow-2xl z-10">
@@ -441,7 +441,7 @@ export default function Home() {
             </div>
 
 
-            <div className="grid grid-cols-5  relative top-16">
+            <div className="grid grid-cols-5  relative lg:top-16 top-5">
               {/* ---------- Player 7 ----------- */}
               <div className=' scale-[.60] lg:scale-75'>
                 <div className="bg-[url('https://cdn.futnext.com/rarity/e_1.png')] bg-cover w-28 h-36 shadow-2xl z-10">
