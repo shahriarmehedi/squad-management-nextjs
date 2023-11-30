@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <div className="bg-[url('https://i.ibb.co/xMVY055/wepik-field.png')] bg-cover lg:bg-center bg-bottom min-h-screen">
       <div className="flex flex-col lg:flex-row lg:p-10 justify-center">
-        <div className="relative mx-auto lg:mx-0 max-w-[800px] lg:w-[700px] bg-white bg-opacity-20 rounded-md lg:my-5 lg:p-10 bg-[url('https://www.ea.com/ea-sports-fc/ultimate-team/web-app/images/backgrounds/pitch_320x382.jpg')] bg-center  lg:bg-[url('https://i.ibb.co/PTdw6sB/pitch.jpg')] bg-cover min-h-screen lg:min-h-fit">
+        <div className="relative mx-auto lg:mx-0 max-w-[800px] lg:w-[700px] h-[820px] bg-white bg-opacity-20 rounded-md lg:my-5 lg:p-10 bg-[url('https://www.ea.com/ea-sports-fc/ultimate-team/web-app/images/backgrounds/pitch_320x382.jpg')] bg-center  lg:bg-[url('https://i.ibb.co/PTdw6sB/pitch.jpg')] bg-cover lg:min-h-fit">
 
           <div className="bg-[url('/left.png')] bg-cover scale-75 lg:scale-100 w-[200px] h-[80px] absolute left-[-25px] bottom-[-12px] lg:bottom-0 lg:left-0 flex items-center justify-center gap-2 cursor-pointer">
             <picture>
@@ -531,7 +531,7 @@ export default function Home() {
 
 
               {/* ---------- Player 9 ----------- */}
-              <div className='relative left-[-12px] top-[5rem] scale-[.60] lg:scale-75'>
+              <div className='relative left-[-7px] top-[5rem] scale-[.60] lg:scale-75'>
                 <div className="bg-[url('https://cdn.futnext.com/rarity/e_1.png')] bg-cover w-28 h-36 shadow-2xl z-10">
                   <div className='flex items-center justify-center gap-2 bg-zinc-800 border-sky-500 rounded-md border w-[75px] relative left-[17px]'>
                     <p className='text-white font-semibold'>
