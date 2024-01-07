@@ -191,7 +191,16 @@ export default function Home() {
                     <p className='text-white font-semibold text-sm'>
                       {players[0]?.positions[0]?.name}
                     </p>
-
+                  </div>
+                  <div className='flex items-center justify-center gap-2px-1 absolute top-9 right-[130px]'>
+                    <p className='text-white font-semibold text-sm'>
+                      {players[0]?.rating}
+                    </p>
+                  </div>
+                  <div className='flex items-center justify-center gap-2px-1 absolute top-[55px] right-[130px]'>
+                    <p className='text-white font-semibold text-xs'>
+                      {players[0]?.positions[0]?.name}
+                    </p>
                   </div>
 
                   <div className='flex justify-center'>
@@ -236,6 +245,16 @@ export default function Home() {
                     </p>
 
                   </div>
+                  <div className='flex items-center justify-center gap-2px-1 absolute top-9 right-[130px]'>
+                    <p className='text-white font-semibold text-sm'>
+                      {players[0]?.rating}
+                    </p>
+                  </div>
+                  <div className='flex items-center justify-center gap-2px-1 absolute top-[55px] right-[130px]'>
+                    <p className='text-white font-semibold text-xs'>
+                      {players[0]?.positions[0]?.name}
+                    </p>
+                  </div>
 
                   <div className='flex justify-center'>
                     <picture>
@@ -278,6 +297,16 @@ export default function Home() {
                       {players[2]?.positions[0]?.name}
                     </p>
 
+                  </div>
+                  <div className='flex items-center justify-center gap-2px-1 absolute top-9 right-[130px]'>
+                    <p className='text-white font-semibold text-sm'>
+                      {players[0]?.rating}
+                    </p>
+                  </div>
+                  <div className='flex items-center justify-center gap-2px-1 absolute top-[55px] right-[130px]'>
+                    <p className='text-white font-semibold text-xs'>
+                      {players[0]?.positions[0]?.name}
+                    </p>
                   </div>
 
                   <div className='flex justify-center'>
@@ -325,6 +354,16 @@ export default function Home() {
                     </p>
 
                   </div>
+                  <div className='flex items-center justify-center gap-2px-1 absolute top-9 right-[130px]'>
+                    <p className='text-white font-semibold text-sm'>
+                      {players[0]?.rating}
+                    </p>
+                  </div>
+                  <div className='flex items-center justify-center gap-2px-1 absolute top-[55px] right-[130px]'>
+                    <p className='text-white font-semibold text-xs'>
+                      {players[0]?.positions[0]?.name}
+                    </p>
+                  </div>
 
                   <div className='flex justify-center'>
                     <picture>
@@ -369,6 +408,16 @@ export default function Home() {
                     </p>
 
                   </div>
+                  <div className='flex items-center justify-center gap-2px-1 absolute top-9 right-[130px]'>
+                    <p className='text-white font-semibold text-sm'>
+                      {players[0]?.rating}
+                    </p>
+                  </div>
+                  <div className='flex items-center justify-center gap-2px-1 absolute top-[55px] right-[130px]'>
+                    <p className='text-white font-semibold text-xs'>
+                      {players[0]?.positions[0]?.name}
+                    </p>
+                  </div>
 
                   <div className='flex justify-center'>
                     <picture>
@@ -412,6 +461,16 @@ export default function Home() {
                       {players[5]?.positions[0]?.name}
                     </p>
 
+                  </div>
+                  <div className='flex items-center justify-center gap-2px-1 absolute top-9 right-[130px]'>
+                    <p className='text-white font-semibold text-sm'>
+                      {players[0]?.rating}
+                    </p>
+                  </div>
+                  <div className='flex items-center justify-center gap-2px-1 absolute top-[55px] right-[130px]'>
+                    <p className='text-white font-semibold text-xs'>
+                      {players[0]?.positions[0]?.name}
+                    </p>
                   </div>
 
                   <div className='flex justify-center'>
@@ -459,6 +518,16 @@ export default function Home() {
                     </p>
 
                   </div>
+                  <div className='flex items-center justify-center gap-2px-1 absolute top-9 right-[100px]'>
+                    <p className='text-white font-semibold text-sm'>
+                      {players[0]?.rating}
+                    </p>
+                  </div>
+                  <div className='flex items-center justify-center gap-2px-1 absolute top-[55px] right-[100px]'>
+                    <p className='text-white font-semibold text-xs'>
+                      {players[0]?.positions[0]?.name}
+                    </p>
+                  </div>
 
                   <div className='flex justify-center'>
                     <picture>
@@ -503,6 +572,16 @@ export default function Home() {
                     </p>
 
                   </div>
+                  <div className='flex items-center justify-center gap-2px-1 absolute top-9 right-[100px]'>
+                    <p className='text-white font-semibold text-sm'>
+                      {players[0]?.rating}
+                    </p>
+                  </div>
+                  <div className='flex items-center justify-center gap-2px-1 absolute top-[55px] right-[100px]'>
+                    <p className='text-white font-semibold text-xs'>
+                      {players[0]?.positions[0]?.name}
+                    </p>
+                  </div>
 
                   <div className='flex justify-center'>
                     <picture>
@@ -546,6 +625,16 @@ export default function Home() {
                       {players[1]?.positions[0]?.name}
                     </p>
 
+                  </div>
+                  <div className='flex items-center justify-center gap-2px-1 absolute top-9 right-[100px]'>
+                    <p className='text-white font-semibold text-sm'>
+                      {players[0]?.rating}
+                    </p>
+                  </div>
+                  <div className='flex items-center justify-center gap-2px-1 absolute top-[55px] right-[100px]'>
+                    <p className='text-white font-semibold text-xs'>
+                      {players[0]?.positions[0]?.name}
+                    </p>
                   </div>
 
                   <div className='flex justify-center'>
@@ -592,6 +681,16 @@ export default function Home() {
                     </p>
 
                   </div>
+                  <div className='flex items-center justify-center gap-2px-1 absolute top-9 right-[100px]'>
+                    <p className='text-white font-semibold text-sm'>
+                      {players[0]?.rating}
+                    </p>
+                  </div>
+                  <div className='flex items-center justify-center gap-2px-1 absolute top-[55px] right-[100px]'>
+                    <p className='text-white font-semibold text-xs'>
+                      {players[0]?.positions[0]?.name}
+                    </p>
+                  </div>
 
                   <div className='flex justify-center'>
                     <picture>
@@ -635,6 +734,16 @@ export default function Home() {
                       {players[8]?.positions[0]?.name}
                     </p>
 
+                  </div>
+                  <div className='flex items-center justify-center gap-2px-1 absolute top-9 right-[100px]'>
+                    <p className='text-white font-semibold text-sm'>
+                      {players[0]?.rating}
+                    </p>
+                  </div>
+                  <div className='flex items-center justify-center gap-2px-1 absolute top-[55px] right-[100px]'>
+                    <p className='text-white font-semibold text-xs'>
+                      {players[0]?.positions[0]?.name}
+                    </p>
                   </div>
 
                   <div className='flex justify-center'>
